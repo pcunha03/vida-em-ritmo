@@ -1,0 +1,38 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000;
+  overflow-y: auto;
+  width: 250px; /* Adjust width as needed */
+}
+
+#sidebar .custom-menu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 1100 !important; /* Force it above the content */
+  margin-right: -20px;
+}
+
+#content {
+  z-index: 1;
+  margin-left: 250px; /* Same as sidebar width */
+  padding: 20px;
+  z-index: 900; /* Ensure it's below the sidebar */
+}
+
+.sidebar-heading {
+  color: #5c4a72;
+  font-weight: bold;
+}
+
+/* #sidebarCollapse styles */
+#sidebarCollapse {
+  z-index: 55555;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
+/* End of #sidebarCollapse styles */
